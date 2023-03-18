@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Movie Ratings</title>
+	  <link rel="stylesheet"
+        href="https://unpkg.com/bootstrap/dist/css/bootstrap.css">
+	  <style>
+
+	   img {
+	       max-width: 70%;
+	   }
+
+	   .image-center {
+	       display: block;
+	       margin: 10px auto;
+
+	   }
+	   div {
+
+	       margin 20px auto;
+	   }
+
+	  </style>
+    </head>
+    <body>
+	
+	<div>
+	    <form id="movie-form">
+		<label for="movie-name">MOVIE NAME</label>
+		<input name="movie-name" type="text" value="" placeholder="Movie Name" />
+		<label for="rating">MOVIE RATING</label>
+		<input name="rating" type="number" value="" min="0" max="10" />
+		<button>submit</button>
+	    </form>
+	    <table id="ratings-list">
+		<tr id="tbl-header" ><th>NAME</th><th>RATING</th><th>REMOVE</th></tr>
+
+	    </table>
+	    
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="movie-list.js"></script>
+	
+    </body>
+</html>
