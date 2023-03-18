@@ -18,10 +18,9 @@ $('button').on('click', function(event) {
 	$('#ratings-list')
 	.append (`<tr class="list-item"><td>${movie.name}</td><td>${movie.rating}</td><td class="remove">x</td></tr>`);
 
-    $('.remove').on('click' , function(event) {
+    $('table').on('click', '.remove', function() {
 	$(this).parent().remove();
-    });
-
+    })
     
 });
 
